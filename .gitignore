@@ -1,0 +1,37 @@
+# Dependencies
+node_modules/
+
+# Variabel lingkungan — berisi JWT_SECRET dan kredensial broker.
+# Yang ikut ke git hanya .env.example.
+.env
+.env.local
+*.env
+!.env.example
+
+# Database SQLite (dibuat otomatis saat server pertama dijalankan)
+backend/data/
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+
+# Hasil build
+backend/dist/
+mobile/dist/
+mobile/.expo/
+mobile/web-build/
+
+# Native project hasil Continuous Native Generation — jangan di-commit,
+# atur perilaku native dari app.json (lihat mobile/AGENTS.md).
+mobile/ios/
+mobile/android/
+
+# Log
+*.log
+npm-debug.log*
+yarn-error.log*
+
+# OS & editor
+.DS_Store
+Thumbs.db
+*.swp
